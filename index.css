@@ -1,0 +1,462 @@
+/*estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: "Libertinus Mono", monospace;
+ 
+}
+
+h2.titulo{
+    color: #ffff;
+    font-size: 38px;
+    text-align: center;
+
+}
+h2.titulo span{
+    color: #72c27d;
+    
+}
+
+
+body{
+    background-color: #1a1b1d;
+    height: 100vh;
+
+}
+
+.interface{
+    max-width: 1780px;
+    margin: auto;
+
+}
+
+.flex{
+    display: flex;
+}
+
+/* estido do cabeçalho */
+
+header{
+    padding: 25px 5%;
+    
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header a{
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+   
+
+}
+header a:hover{
+    color: #72c27f;
+    transform: scale(1,2);
+    
+    
+    
+}
+
+header nav ul{
+    list-style-type: none;
+
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+
+
+
+
+/* estilo do topo do site */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #ffff;
+    font-size: 40px;
+    line-height: 100px;
+}
+.topo-do-site .txt-topo-site span{
+    color:#72c27f ;
+    
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #ffff;
+    margin: 40px 0;
+    line-height: 1.5;
+    text-align: justify;
+
+    
+}
+
+.edd-contato button{
+    background-color: #72c27f;
+    color: white;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.edd-contato button:hover{
+    box-shadow: 0px 0px 8px #f10303;
+    transform: scale(1.05);
+}
+
+.img-topo-do-site .foto{
+    border: 0;
+    border-radius: 80px;
+    
+}
+.topo-do-site .img-topo-do-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* estilo das especialidades*/
+
+section.especialidades{
+    padding: 60px 4%;
+
+}
+
+section.especialidades .flex{
+    gap: 60px;
+
+}
+
+.especialidades .especialidades-box{
+    color: #ffff;
+    padding: 40px;
+    border-radius: 40px;
+    border: 2px solid white;
+    margin-top: 30px;
+    transition: .3s;
+
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #f1030383;
+
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #72c27d;
+    
+
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+
+
+}
+
+/* estilo sobre */
+
+section.sobre{
+    padding: 80px 4%;
+
+}
+.img-sobre img{
+    border: 0;
+    border-radius: 70px;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .txt-sobre{
+    color: #ffff;
+
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #72c27d;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+ .edd-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #72c27d;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 5px;
+    
+}
+
+/* PORTFOLIO*/
+
+section .portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #e70606a1;
+
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 700px;
+    height: 350px;
+    background-color: #72c27f;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: .7s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(71, 69, 69, 0.308);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* forumario*/
+
+section.formulario{
+    padding: 80px 4%;
+
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #3f3e3e36;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 20px;
+    color: #ffff;
+    font-size: 18px;
+
+}
+
+form textarea{
+    resize: none;
+    max-height: 500px;
+    
+}
+
+form .edd-enviar{
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+form .edd-enviar input{
+    width: 120px;
+    background-color: #72c27d;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+/* estilo do rodape*/
+
+footer{
+    padding: 60px 4%;
+    
+
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+    
+}
+
+.borda{
+    border-top: 2px solid #72c27f;
+}
+
+footer .line-footer p i{
+    color: #72c27d;
+    font-size: 40px;
+    
+}
+
+footer .line-footer p a{
+    color: #ffff;
+
+}
+
+/* aplicando responsivel*/
+
+@media screen and (max-width: 1020px){
+    /* classes gerais */
+    .flex{
+        flex-direction: column;
+
+    }
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    /* cabeçalho */
+    .menu-desktop{
+        display: none;
+    }
+    /* topo do site */
+    section.topo-do-site .flex{
+        gap: 40px;
+
+    }
+
+    section.topo-do-site{
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1{
+        font-size: 30px;
+
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+
+    /* especialidade */
+    section.especialidade{
+        padding: 40px 8%;
+    }
+    /* sobre */
+    section.sobre{
+        padding: 80px 8%;
+
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .edd-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+    /*  portfolio */
+    section.portfolio{
+        padding: 80px 8%;
+        
+    }
+
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        
+    }
+
+    section.portfolio .flex{
+        gap: 60px;
+    }
+    /* rodape */
+    footer .flex{
+        flex-direction: column;
+        
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+}
