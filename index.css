@@ -35,6 +35,11 @@ body{
     display: flex;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* estido do cabeçalho */
 
 header{
@@ -69,13 +74,81 @@ header nav ul{
 
 }
 
-header nav ul li{
+header nav.menu-desktop ul li{
     display: inline-block;
     padding: 0 40px;
 }
 
+/* estilo do menu mobile*/
 
+.btn-abrir-menu i{
+    color: #72c27f;
+    font-size: 40px;
+}
 
+.menu-mobile{
+    background-color: #1a1b1d;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .6s;
+
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+    
+}
+
+.menu-mobile .bt-fechar{
+    padding: 20px 5%;
+
+}
+
+.menu-mobile .bt-fechar i{
+    color: #72c27f;
+    font-size: 30px;
+
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+
+}
+
+menu-mobile nav ul li a:hover{
+    background-color: #72c27d;
+    color: #0000;
+
+}
+
+.overlay-menu{
+    background-color: #1a1b1d73;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+
+}
 
 
 
