@@ -18,6 +18,7 @@ O portfólio é composto por seções organizadas, que incluem:
 
 ## Visualização local
 
+<<<<<<< HEAD
 🔒 Explicação dos principais pontos:
 # Portfólio — Atualizações de Segurança
 
@@ -53,9 +54,15 @@ Este projeto passou por uma revisão completa de segurança e validação para g
 - Netlify (hospedagem com headers de segurança)
 
 ---
+=======
+Para visualizar o site em ambiente local, basta clonar o repositório e abrir o arquivo `index.html` em qualquer navegador:
+>>>>>>> parent of b8f282d (inicio segurança)
 
 ```bash
 git clone https://github.com/EducamargoP/novo-portfolio.git
 cd novo-portfolio
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> parent of b8f282d (inicio segurança)

@@ -20,6 +20,7 @@ function validarFormulario() {
     return false
   }
 
+<<<<<<< HEAD
   if (!emailValido) {
     alert('E-mail inválido: verifique o formato.')
     return false
@@ -32,3 +33,8 @@ function validarFormulario() {
 
   return true
 }
+=======
+overlay.addEventListener('click', ()=>{
+    menu.classList.remove('abrir-menu')
+})
+>>>>>>> parent of b8f282d (inicio segurança)
