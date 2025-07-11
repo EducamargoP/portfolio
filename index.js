@@ -36,5 +36,9 @@ function validarFormulario() {
 =======
 overlay.addEventListener('click', ()=>{
     menu.classList.remove('abrir-menu')
+<<<<<<< HEAD
+})
+>>>>>>> parent of b8f282d (inicio segurança)
+=======
 })
 >>>>>>> parent of b8f282d (inicio segurança)

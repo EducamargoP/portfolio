@@ -19,6 +19,10 @@ O portfólio é composto por seções organizadas, que incluem:
 ## Visualização local
 
 <<<<<<< HEAD
+(sua versão atual)
+=======
+(versão do commit que está sendo revertido)
+>>>>>>> b8f282d
 🔒 Explicação dos principais pontos:
 # Portfólio — Atualizações de Segurança
 
@@ -55,6 +59,8 @@ Este projeto passou por uma revisão completa de segurança e validação para g
 
 ---
 =======
+=======
+>>>>>>> parent of b8f282d (inicio segurança)
 Para visualizar o site em ambiente local, basta clonar o repositório e abrir o arquivo `index.html` em qualquer navegador:
 >>>>>>> parent of b8f282d (inicio segurança)
 
@@ -62,7 +68,10 @@ Para visualizar o site em ambiente local, basta clonar o repositório e abrir o 
 git clone https://github.com/EducamargoP/novo-portfolio.git
 cd novo-portfolio
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> parent of b8f282d (inicio segurança)
 =======
 >>>>>>> parent of b8f282d (inicio segurança)
