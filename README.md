@@ -18,8 +18,22 @@ O portfólio é composto por seções organizadas, que incluem:
 
 ## Visualização local
 
+🔒 Explicação dos principais pontos:
+Strict-Transport-Security: força o uso de HTTPS.
+
+X-Frame-Options: impede que seu site seja carregado em iframes (protege contra clickjacking).
+
+X-Content-Type-Options: bloqueia tentativa de interpretar arquivos com tipo incorreto.
+
+Content-Security-Policy: define de onde scripts, estilos e imagens podem ser carregados.
+
+Referrer-Policy: controla o que o navegador envia como referência.
+
+Permissions-Policy: restringe acesso a recursos do navegador.
+
 Para visualizar o site em ambiente local, basta clonar o repositório e abrir o arquivo `index.html` em qualquer navegador:
 
 ```bash
 git clone https://github.com/EducamargoP/novo-portfolio.git
 cd novo-portfolio
+# portfolio
