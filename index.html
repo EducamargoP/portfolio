@@ -169,14 +169,20 @@
         <section id="formulario" class="formulario">
             <div class="interface">
                 <h2 class="titulo"> FALA <span>COMIGO.</span></h2>
+                    <form action="https://formsubmit.co/eduardocamargopaulino@gmail.com" method="POST" onsubmit="return validarFormulario()">
+                        <input type="text" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+                        <input type="text" id="nome" name="nome" placeholder="Seu Nome:" required>     
+                        <input type="text" id="email" name="email" placeholder="Seu e-mail:" required> 
+                        <input type="text" id="numero" name="celular" placeholder="Seu Celular:"> 
+
+                        <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem:" required></textarea>  
+
+                        <div class="edd-enviar"><input type="submit" value="ENVIAR"></div>           
+                    </form> <!--fim do formulario form-->
+
                 
-                <form action="https://formsubmit.co/eduardocamargopaulino@gmail.com" method="POST">
-                    <input type="text" id="nome" name="nome" placeholder="Seu Nome:" required>     
-                    <input type="text" id="email "name="email" placeholder="Seu e-mail:" required> 
-                    <input type="text" id="celular" name="celular" placeholder="Seu Celular:"> 
-                    <textarea name="" id="mensagem" name="mensagem" placeholder="Sua Mensagem:" required></textarea>  
-                    <div class="edd-enviar"><input type="submit" value="ENVIAR"></div>           
-                </form>
+               
             </div><!--fim da interface-->
         </section><!--fim do formulario -->
 
@@ -192,9 +198,9 @@
                     </div>
                     <div class="edd-social">
                                 
-                        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><button><i class="bi bi-linkedin"></i></button></a>
-                        <a href="https://github.com/EducamargoP"><button><i class="bi bi-github"></i></button></a>
-                        <a href="https://youtu.be/0g0RRO-4guc"><button><i class="bi bi-youtube"></i></button></a>
+                        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" rel="noopener noreferrer"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://github.com/EducamargoP" target="_blank" rel="noopener noreferrer"><button><i class="bi bi-github"></i></button></a>
+                        <a href="https://youtu.be/0g0RRO-4guc" target="_blank" rel="noopener noreferrer"><button><i class="bi bi-youtube"></i></button></a>
                 </div><!--fim da flex-->          
             </div> <!--fim da edd-social-->
             </div><!--fim da line-footer-->
