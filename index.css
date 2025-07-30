@@ -326,6 +326,7 @@ section.portfolio .flex{
 .img-port{
     width: 700px;
     height: 350px;
+    margin: 20px;
     background-color: #72c27f;
     background-size: cover;
     background-position: 100% 0%;
