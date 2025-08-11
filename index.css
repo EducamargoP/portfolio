@@ -223,12 +223,12 @@ section.topo-do-site .flex{
 /* estilo das especialidades*/
 
 section.especialidades{
-    padding: 60px 4%;
+    padding: 100px 4%;
 
 }
 
 section.especialidades .flex{
-    gap: 60px;
+    gap: 40px;
 
 }
 
@@ -249,7 +249,7 @@ section.especialidades .flex{
 }
 
 .especialidades .especialidades-box i{
-    font-size: 70px;
+    font-size: 80px;
     color: #72c27d;
     
 
