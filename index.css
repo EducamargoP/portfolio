@@ -1,4 +1,6 @@
-/*estilo geral */
+/*==============================
+    estilo geral site
+================================*/
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,7 @@
 }
 
 h2.titulo{
+    padding: 25px;
     color: #ffff;
     font-size: 38px;
     text-align: center;
@@ -40,7 +43,9 @@ html {
 }
 
 
-/* estido do cabeçalho */
+/*==============================
+    cabeçalho do site
+================================*/
 
 header{
     padding: 25px 5%;
@@ -55,21 +60,36 @@ header > .interface{
 }
 
 header a{
+    position: relative;
     color: #7d7d7d;
     text-decoration: none;
     display: inline-block;
     font-size: 1.3rem
+
    
 
 }
 header a:hover{
-    color: #72c27f;
-    
-    
-    
-    
+    transform: scaleY(1.2);
+    color: #72c27f;   
     
 }
+
+header nav.menu-desktop a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #72c27d;
+  transition: width 0.8s ease;
+}
+
+header nav.menu-desktop a:hover::after {
+  width: 65%;
+}
+
 
 header nav ul{
     list-style-type: none;
@@ -81,7 +101,9 @@ header nav.menu-desktop ul li{
     padding: 0 40px;
 }
 
-/* estilo do menu mobile*/
+/*==============================
+    menu mobile
+================================*/
 
 .btn-abrir-menu i{
     color: #72c27f;
@@ -154,7 +176,9 @@ header nav.menu-desktop ul li{
 
 
 
-/* estilo do topo do site */
+/*==============================
+    conteudo do topo site
+================================*/
 
 section.topo-do-site{
     padding: 40px 4%;
@@ -187,18 +211,17 @@ section.topo-do-site .flex{
 
 .edd-contato button{
     background-color: #72c27f;
-    color: white;
-    padding: 10px 40px;
+    padding: 15px 40px;
     font-size: 18px;
     font-weight: 500;
     border: 0;
     border-radius: 20px;
     cursor: pointer;
-    transition: .3s;
+    transition: .6s;
 }
 
 .edd-contato button:hover{
-    box-shadow: 0px 0px 8px #f10303;
+    box-shadow: 0px 0px 8px;
     transform: scale(0.9);
 }
 
@@ -221,11 +244,39 @@ section.topo-do-site .flex{
         top: 30px;
     }
 }
+.skills-icons {
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 2rem;
+}
 
-/* estilo das especialidades*/
+.skills-icons i {
+  margin: 0 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skills-icons i:hover {
+  transform: scale(1.2);
+}
+
+/* Cores individuais */
+.fa-html5 { color: #E34F26; }      /* HTML - laranja */
+.fa-css3-alt { color: #1572B6; }   /* CSS - azul */
+.fa-js { color: #F7DF1E; }         /* JavaScript - amarelo */
+.fa-python { color: #3776AB; }     /* Python - azul */
+.fa-php { color: #777BB4; }        /* PHP - roxo */
+.fa-database { color: #00618A; }   /* MySQL - azul escuro */
+.fa-linux { color: #FCC624; }      /* Linux - amarelo */
+.fa-github { color: #fff; }     /* GitHub - preto */
+.fa-shield-alt { color: #4CAF50; } /* Segurança - verde */
+
+/*==============================
+    minha especialidades
+================================*/
 
 section.especialidades{
     padding: 100px 4%;
+    
 
 }
 
@@ -235,18 +286,19 @@ section.especialidades .flex{
 }
 
 .especialidades .especialidades-box{
+    max-width: 550px;
     color: #ffff;
     padding: 40px;
     border-radius: 40px;
     border: 2px solid white;
     margin-top: 30px;
-    transition: .3s;
+    transition: .6s;
 
 }
 
 .especialidades .especialidades-box:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 30px #f1030383;
+    box-shadow: 0 0 30px #72c27f78;
 
 }
 
@@ -265,7 +317,9 @@ section.especialidades .flex{
 
 }
 
-/* estilo sobre */
+/*==============================
+    conteudo sobre
+================================*/
 
 section.sobre{
     padding: 80px 4%;
@@ -310,78 +364,126 @@ section.sobre .flex{
     font-size: 30px;
     cursor: pointer;
     margin: 0 5px;
+    transition: 0.4s ease-in-out;
     
 }
 .edd-social button:hover {
-    background-color: #7d7d7d;
-}
-/* PORTFOLIO*/
-
-section .portfolio{
-    width: 100%;
-    padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #e70606a1;
-
+    transform: scale(0.9);
+    background-color: #72c27d84
 }
 
-section.portfolio .flex{
-    justify-content: space-around;
-    margin-top: 60px;
+/*==============================
+PARTE DO PORTFOLIO / PROJETOS 
+================================*/
+
+
+.portfolio {
+    padding: 0 25px;
+    
+
 }
 
-.img-port{
-    width: 100%;
-    height: 300px;
-    margin: 10px;
-    background-color: #000;
-    background-size: cover;
-    transition: 0.8s;
+.portfolio .interface {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    justify-items: center;
+    
+}
+.projeto-card {
     cursor: pointer;
-    border-radius: 40px;
-    position: relative;
-    filter: brightness(60%);
-    
-}
-
-.img-port:hover{
-    background-position: 100% 100%;
-    filter: brightness(100%);
-    
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(114, 194, 1125, 0.3);
+    transform: scale(0.9);
+    transition: 0.6s ease;
 
 }
 
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(71, 69, 69, 0.037);
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
+.projeto-card:hover{
+    transform: translateY(-20px);
+    color: #fff;
+}
+
+.projeto-card img {
+    text-align: center;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    transition: 0.9s ease-in-out;
+    
+}
+
+.projeto-card img:hover {
+    width: 85%;
+}
+
+.botoes {
+
     justify-content: center;
-    font-size: 24px;
-    font-weight: 600;
-    color: #ffff;
-    opacity: 0;
-    transition: 0.5s;
-    
+    gap: 10px;
+    margin-top: 10px;
+    transition: 0.8s ease-in-out;
 }
 
-.overlay:hover{
-    opacity: 1;
+.botoes a {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.projeto-card i:hover {
+    transform: scale(1.3);
+}
+.projeto-card a:hover {
+    transform: scale(0.85);
 }
 
-/* projeto python */
+.btn-github {
+    background-color: #fff;
+    color: #000;
 
-.linha {
-    width: 20px;
-    background: #72c27d;
-    height: 100%;
 }
 
-/* estilo do rodape*/
+.btn-site {
+    background-color: #72c27d;
+    color: #000;
+}
+
+.projeto-card p {
+    margin-bottom: 2rem;
+    line-height: 1.3;
+    padding-bottom: 1rem;
+    color: #ffffff31;
+}
+
+.projeto-card p:hover {
+    color: #fff;
+}
+
+
+.projeto-card h3 {
+    padding: 10px;
+    margin: 5px;
+    color: #72c27d;
+}
+
+.projeto-card i {
+    font-size: 1.4rem;
+}
+
+
+
+
+
+/*==============================
+    estilo rodapé / footer
+================================*/
 
 footer{
     padding: 60px 4%;
@@ -415,7 +517,9 @@ footer .line-footer p a{
 
 
 
-/* aplicando responsivel*/
+/*==============================
+    APLICANDO RESPONSIVIDADE
+================================*/
 
 @media screen and (max-width: 1020px){
     /* classes gerais */
@@ -441,6 +545,8 @@ footer .line-footer p a{
         gap: 40px;
 
     }
+
+    
 
     section.topo-do-site{
         padding: 20px 8%;
@@ -473,27 +579,14 @@ footer .line-footer p a{
 
     .edd-social{
         text-align: center;
-    }
+    }http://127.0.0.1:5500/index.html
 
     .img-sobre img{
         width: 100%;
     }
     /*  portfolio */
-    section.portfolio{
-        padding: 80px 8%;
-        
-    }
-
-    .img-port{
-        width: 100%;
-        max-width: 360px;
-        margin: 0 auto;
-        
-    }
-
-    section.portfolio .flex{
-        gap: 60px;
-    }
+     
+    
     /* rodape */
     footer .flex{
         flex-direction: column;
@@ -503,4 +596,30 @@ footer .line-footer p a{
     footer .line-footer{
         text-align: center;
     }
+
+    
+}
+
+@media screen and (max-width: 1020px) {
+  section.portfolio .interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  section.portfolio .projeto-card {
+    line-height: normal;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto 20px; /* centraliza e dá espaço entre os cards */
+  }
+
+  .projeto-card img {
+    width: 95%;
+  }
+
+  .projeto-card p {
+    display: none;
+  }
 }

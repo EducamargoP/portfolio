@@ -15,6 +15,8 @@
     <!--inicios script-->
     <script src="index.js" defer></script>
     <!--fim script-->
+    <!--icones para texto icones de tecnologias-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Portfólio</title>
 </head>
 <body>
@@ -72,12 +74,23 @@
                 <div class="flex">
                     <div class="txt-topo-site">
                         <h1>EDUARDO CAMARGO PAULINO.</h1>
-                        <p><span> HTML | CSS3 | JavaScript | Python | Segurança da Informação </span> | Formado em Análise e Desenvolvimento de Sistemas 25 de Setembro de 2025, dedico meus estudos ao aprimoramento contínuo em desenvolvimento de software, com ênfase em Front-end e programação com Python. Tenho investido em cursos complementares voltados a tecnologias como HTML, CSS, JavaScript, MySQL e Linux, além de fundamentos em segurança da informação e boas práticas com Git/GitHub.
+                        <p><span> HTML | CSS3 | JavaScript | Python | PHP | Segurança da Informação </span> | Formado em Análise e Desenvolvimento de Sistemas 25 de Setembro de 2025, dedico meus estudos ao aprimoramento contínuo em desenvolvimento de software, com ênfase em Front-end e programação com Python. Tenho investido em cursos complementares voltados a tecnologias como HTML, CSS, JavaScript, MySQL e Linux, além de fundamentos em segurança da informação e boas práticas com Git/GitHub.
 
                             Meu principal objetivo é atuar como desenvolvedor, aplicando meus conhecimentos em projetos reais, evoluindo tecnicamente e contribuindo ativamente para equipes colaborativas e inovadoras.
 
                             Sou uma pessoa dedicada, curiosa e comprometida com a qualidade daquilo que me proponho a fazer. Gosto de transformar desafios em aprendizado e acredito no poder do conhecimento compartilhado para construir soluções eficientes.
                         </p>
+                        <div class="skills-icons">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-python"></i>
+                            <i class="fab fa-php"></i>
+                            <i class="fas fa-database"></i> <!-- MySQL -->
+                            <i class="fab fa-linux"></i>
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-shield-alt"></i> <!-- Segurança -->
+                        </div><!--fim da skills-icons--><br><br>
                         <div class="edd-contato">
                             <a href="https://www.linkedin.com/in/eduardo-camargo-paulino-53475b232/">
                                 <button>Entre em Contato</button>
@@ -178,9 +191,11 @@
                                 <p><strong>Domínio em tecnologias e práticas:</strong></p>
                                 <p>🐍 Python para automações, scripts e APIs</p>
                                 <p>🌐 HTML, CSS, JavaScript no desenvolvimento de interfaces</p>
+                                <p>🐘 PHP para aplicações web dinâmicas e integração com bancos de dados</p>
                                 <p>🐧 Linux no dia a dia de desenvolvimento e servidores</p>
                                 <p>🔄 Git/GitHub com boas práticas de versionamento e colaboração</p>
-                                <p>🛡️ Estudos em segurança da informação, com foco em pentesting</p>
+                                <p>📊 Observabilidade com Grafana para monitoramento e análise de métricas </p>
+                                <p>🛡️ Estudos em segurança da informação, com foco em pentesting</p><br>
 
 
                             <div class="edd-social">
@@ -197,88 +212,203 @@
             </div><!--fim do interface-->
         </section><!--fim do sobre-->
 
+
+        <!--PROJETO FRONT-END ONLINE-->
         <section id="portfolio" class="portfolio"><!--inicio front-end-->
+            <h2 class="titulo">PROJETOS <span>front-end Online</span></h2><br>
             <div class="interface">
-                <h2 class="titulo">PROJETOS <span>front-end  </span></h2>
-                <div class="flex">
-                    <a href="https://github.com/EducamargoP/API-javascript" target="_blank">
-                     <div class="img-port" style="background-image: url(./img/rickandmorty.png);">
-                     <div class="overlay"> API Rick and Morty </div></a>         
-                     </div>
-                     <div class="img-port" style="background-image: url(./img/lanchonete.png);">
-                     <div class="overlay"> Site Lanchonete </div>          
-                     </div>
-                     
-                     
+                
 
-                      <a href="https://github.com/EducamargoP/projeto-museu" target="_blank">
-                      <div class="img-port" style="background-image: url(./img/moseu.png);">
-                        <div class="overlay"> Site Museu </div></a>
-                      </div>
+                    <!--projeto yuri-->
+                    <div class="projeto-card">
+                        <img src="./img/PortfolioYuri.png" alt="PROJETO PARA Portfolio Yuri">
+                        <h3>Projeto Portfólio Yuri Rocha</h3>
+                        <p>Site criado para apresentação profissional de portfólio.
+                            Desenvolvido com HTML, CSS e JavaScript, destaca projetos e informações de forma responsiva e moderna.</p>
+                        <i class="fab fa-html5" class="icone"></i>
+                        <i class="fab fa-css3-alt" class="icone"></i>
+                        <i class="fab fa-js"class="icone"></i>
+                        <div class="botoes">
+                            <a href="https://github.com/EducamargoP/Projeto_YuriRocha" target="_blank" class="btn-github"><i class="bi bi-github"></i></a>
+                            <a href="https://portfolioyuri-rocha.vercel.app/" target="_blank" class="btn-site"><i class="fas fa-globe"></i></a>
+                        </div><!--fim dos botoes-->
+                    </div><!--fim do projeto-card-->
+                    <!--fim do projeto yuri-->
 
-                        <a href="https://personalwilliamfernando.netlify.app/" target="_blank">
-                        <div class="img-port" style="background-image: url(./img/site-personal-trainer.png);">
-                        <div class="overlay">Site Personal Trainer </div></a>         
-                                
-                </div><!--fim da flex-->
-            </div><!--fim da interface-->
-            <div class="flex">
-                     
-                     <a href="https://github.com/EducamargoP/ecommerce-estudo" target="_blank">
-                     <div class="img-port" style="background-image: url(./img/ecommerce.png);">
-                     <div class="overlay">E-commerce Responsivo</div></a>         
-                     </div>
-                     
-                      <a href="https://github.com/EducamargoP/Projeto_coffee" target="_blank">
-                      <div class="img-port" style="background-image: url(./img/Projetocoffe.png);">
-                        <div class="overlay"> Projeto coffe </div></a>
-                      </div>
-                       
-                        <a href="https://eletrosolucoes.vercel.app/" target="_blank">
-                        <div class="img-port" style="background-image: url(./img/Projeto_eletro.png);">
-                        <div class="overlay">Projeto Eletro Soluções </div></a> 
-                        </div>     
-
-                         <a href="https://github.com/EducamargoP/Projeto_YuriRocha" target="_blank">
-                        <div class="img-port" style="background-image: url(./img/PortfolioYuri.png);">
-                            <div class="overlay">Portfolio YuriRocha </div></a> 
-                        </div>
-                                
-                </div><!--fim da flex--><br><br>
-        </section><!--fim do portfolio front-end-->
-        <div class="linha"></div>
-
-        <!--projetos python-->
-         <section id="portfolio" class="portfolio"><!--inicio front-end-->
-            <div class="interface">
-                <h2 class="titulo">PROJETOS <span>Python  </span></h2>
-                <div class="flex">
+                     <!--projeto Personal Trainer-->
+                    <div class="projeto-card">
+                        <img src="./img/site-personal-trainer.png" alt="PROJETO PARA Portfolio Personal Trainer">
+                        <h3>Projeto Portfólio Personal Trainer</h3>
+                        <p>Site desenvolvido para apresentar o trabalho de um personal trainer, com foco em design limpo e responsivo.
+                            Criado em HTML, CSS e JavaScript, destaca serviços, contato e estilo profissional de forma moderna e acessível.</p>
+                        <i class="fab fa-html5" class="icone"v></i>
+                        <i class="fab fa-css3-alt" class="icone"></i>
+                        <i class="fab fa-js" class="icone"></i>
+                        <div class="botoes">
+                            <a href="https://github.com/EducamargoP/Personal-wiiliamFernando" target="_blank" class="btn-github"><i class="bi bi-github"></i></a>
+                            <a href="https://personalwilliamfernando.netlify.app/" target="_blank" class="btn-site"><i class="fas fa-globe"></i></a>
+                        </div><!--fim dos botoes-->
+                    </div><!--fim do projeto-card-->
+                    <!--fim do projeto Personal Trainer-->
                     
-                    <a href="https://github.com/EducamargoP/automacao" target="_blank">
-                     <div class="img-port" style="background-image: url(./img/automacao.png);">
-                     <div class="overlay">Criando um bot de perguntas e respostas</div></a>        
-                     </div>
+
+                      <!--projeto eletro soluções-->
+                    <div class="projeto-card">
+                        <img src="./img/Projeto_eletro.png" alt="PROJETO PARA Portfolio Yuri">
+                        <h3>Projeto Eletro Soluções</h3>
+                        <p>Site desenvolvido para apresentação de uma loja especializada em manutenção de placas eletrônicas.
+                           Construído com HTML, CSS e JavaScript, o projeto destaca serviços, informações de contato e identidade visual da empresa de forma clara e responsiva.</p>
+                        <i class="fab fa-html5"c lass="icone"></i>
+                        <i class="fab fa-css3-alt" class="icone"></i>
+                        <i class="fab fa-js" class="icone"></i>
+                        <div class="botoes">
+                            <a href="https://github.com/EducamargoP/Projeto_Eletro_solu-es" target="_blank" class="btn-github"><i class="bi bi-github"></i></a>
+                            <a href="https://eletrosolucoes.vercel.app/" target="_blank" class="btn-site"><i class="fas fa-globe"></i></a>
+                            
+
+                        </div><!--fim dos botoes-->
+                    </div><!--fim do projeto-card-->
+                    <!--fim do projeto eletro soluções-->
+
                      
-                     <a href="https://github.com/EducamargoP/desafios/blob/main/time_futebol.py" target="_blank">
-                     <div class="img-port" style="background-image: url(./img/sistema-time-futebol.png);">
-                     <div class="overlay"> Escalando o Time dos Sonhos </div></a>         
-                     </div>
-
-                      <a href="https://github.com/EducamargoP/desafios/blob/main/sistema_Estudo.py" target="_blank">
-                      <div class="img-port" style="background-image: url(./img/sistema-controle-estudo.png);">
-                        <div class="overlay">Estudos com Sistema de Recompensas e Castigos</div></a>
-                      </div>
-
-                        <a href="https://github.com/EducamargoP/Automa-oPython/tree/main/ProjetoGerenciamento" target="_blank">
-                        <div class="img-port" style="background-image: url(./img/gerenciadordearquivos.png);">
-                        <div class="overlay">Gerenciador de Arquivos </div></a>         
+                
+                          
                                 
-                </div><!--fim da flex-->
+               
             </div><!--fim da interface-->
+            
            
-        </section><!--fim do portfolio python-->
+        </section>
+        <!--fim do front-end-->
         
+        <!--PROJETO FRONT-END NO GITHUB-->
+        <section id="portfolio" class="portfolio"><!--inicio front-end-->
+            <h2 class="titulo">PROJETOS <span>front-end no GitHub</span></h2><br>
+            <div class="interface">
+                
 
+                    <!--projeto COFFE-->
+                    <div class="projeto-card">
+                        <img src="./img/Projetocoffe.png" alt="PROJETO PARA SITE DE COFFE">
+                        <h3>Projeto Coffee</h3>
+                        <p>Site responsivo desenvolvido como vitrine de aprendizado para uma lanchonete.
+                           Construído com HTML, CSS e JavaScript, apresenta cardápio, galeria de pratos, comentários de clientes e navegação adaptada para mobile, com interatividade via carrosséis e efeitos visuais modernos..</p>
+                        <i class="fab fa-html5" class="icone"></i>
+                        <i class="fab fa-css3-alt" class="icone"></i>
+                        <i class="fab fa-js"class="icone"></i>
+                        <div class="botoes">
+                            <a href="https://github.com/EducamargoP/Projeto_coffee" target="_blank" class="btn-github"><i class="bi bi-github"></i></a>
+                            
+                        </div><!--fim dos botoes-->
+                    </div><!--fim do projeto-card-->
+                    <!--fim do projeto coffe-->
+
+                     <!--projeto ECOMMERCER-->
+                    <div class="projeto-card">
+                        <img src="./img/ecommerce.png" alt="PROJETO ecommerce site vitrine">
+                        <h3>Projeto E-commerce Estudo</h3>
+                        <p>Site responsivo de e-commerce criado como prática de aprendizado.
+                            Desenvolvido com HTML, CSS e JavaScript, apresenta menu de navegação intuitivo, listagem de produtos com imagens e preços, seção de comentários de clientes e footer informativo, tudo adaptado para desktop, tablet e mobile.</p>
+                        <i class="fab fa-html5" class="icone"v></i>
+                        <i class="fab fa-css3-alt" class="icone"></i>
+                        <i class="fab fa-js" class="icone"></i>
+                        <div class="botoes">
+                            <a href="https://github.com/EducamargoP/ecommerce-estudo" target="_blank" class="btn-github"><i class="bi bi-github"></i></a>
+                            
+                        </div><!--fim dos botoes-->
+                    </div><!--fim do projeto-card-->
+                    <!--fim dO ECOMMERCER-->
+                    
+
+                      <!--projeto Projeto API JavaScript-->
+                    <div class="projeto-card">
+                        <img src="./img/rickandmorty.png" alt="PROJETO PARA Portfolio Yuri">
+                        <h3>Projeto API JavaScript</h3>
+                        <p>Aplicação acadêmica criada para consumir a API pública de Rick and Morty.
+                            Desenvolvida com HTML, CSS e JavaScript, lista personagens da série com imagem, nome e atributos, além de filtros dinâmicos por espécie, gênero e status. O projeto demonstra integração de API, manipulação de dados dinâmicos e interface responsiva adaptada para diferentes dispositivos.</p>
+                        <i class="fab fa-html5"c lass="icone"></i>
+                        <i class="fab fa-js" class="icone"></i>
+                        <div class="botoes">
+                            <a href="https://github.com/EducamargoP/API-javascript" target="_blank" class="btn-github"><i class="bi bi-github"></i></a>
+                            
+                            
+
+                        </div><!--fim dos botoes-->
+                    </div><!--fim do projeto-card-->
+                    <!--fim do projeto Projeto API JavaScript-->
+
+                     
+                
+                          
+                                
+               
+            </div><!--fim da interface-->
+            
+           
+        </section>
+        <!--fim do front-end-->
+
+
+        <!--PROJETO BACK-END-->
+        <section id="portfolio" class="portfolio"><!--inicio front-end-->
+            <h2 class="titulo">PROJETOS <span>Python</span></h2><br>
+            <div class="interface">
+                
+
+                    <!--projeto python automação-->
+                    <div class="projeto-card">
+                        <img src="./img/automacao.png" alt="PROJETO automação de tarefas">
+                        <h3>Projeto Automação</h3>
+                        <p>Script em Python criado para automatizar tarefas repetitivas.
+                            Utiliza bibliotecas da linguagem para executar processos de forma rápida e eficiente, demonstrando aplicação prática de automação e manipulação de dados em ambiente de estudo.</p>
+                        <i class="fab fa-python"></i>
+                        <div class="botoes">
+                            <a href="https://github.com/EducamargoP/automacao" target="_blank" class="btn-github"><i class="bi bi-github"></i></a>
+                            
+                        </div><!--fim dos botoes-->
+                    </div><!--fim do projeto-card-->
+                    <!--fim do python automação-->
+
+                     <!-- Projeto Sistema Estudo-->
+                    <div class="projeto-card">
+                        <img src="./img/sistema-controle-estudo.png" alt="PROJETO estudo com sistema de recompensa">
+                        <h3>Estudos com Sistema de Recompensa e Castigos</h3>
+                        <p>Exercício acadêmico em Python que simula um sistema simples de cadastro e controle.
+                            Desenvolvido para treinar lógica de programação, estruturas condicionais e manipulação de dados, servindo como base para futuros projetos mais complexos.</p>
+                        <i class="fab fa-python"></i>
+                        <div class="botoes">
+                            <a href="https://github.com/EducamargoP/desafios/blob/main/sistema_Estudo.py" target="_blank" class="btn-github"><i class="bi bi-github"></i></a>
+                            
+                        </div><!--fim dos botoes-->
+                    </div><!--fim do projeto-card-->
+                    <!--fim Projeto Sistema Estudo-->
+                    
+
+                      <!--projeto Projeto API JavaScript-->
+                    <div class="projeto-card">
+                        <img src="./img/sistema-time-futebol.png" alt="PROJETO PARA Portfolio Yuri">
+                        <h3>Escalando Time dos Sonhos</h3>
+                        <p>Script em Python voltado para lógica de times e jogadores.
+                            Trabalha com listas e estruturas de repetição para organizar informações esportivas, reforçando conceitos fundamentais da linguagem e prática de programação.</p>
+                        <i class="fab fa-python"></i>
+                        <div class="botoes">
+                            <a href="https://github.com/EducamargoP/desafios/blob/main/time_futebol.py" target="_blank" class="btn-github"><i class="bi bi-github"></i></a>
+                            
+                            
+
+                        </div><!--fim dos botoes-->
+                    </div><!--fim do projeto-card-->
+                    <!--fim do projeto Projeto API JavaScript-->
+
+                     
+                
+                          
+                                
+               
+            </div><!--fim da interface-->
+            
+           
+        </section><!--fim do front-end-->
 
       
         
